@@ -1,4 +1,5 @@
 import React from 'react';
+import { AiOutlineGithub } from 'react-icons/ai';
 
 const Home = () => {
   return (
@@ -7,11 +8,17 @@ const Home = () => {
         <h1>memorygame</h1>
         <h3>Anime Edition</h3>
       </div>
-      <div className="story-btn">
-        <button>Story Mode</button>
-        <p>coming soon!</p>
+      <div className="buttons">
+        <button className="btn">classic Mode</button>
+        <button className="btn-secondary">Survival Mode</button>
       </div>
-      <button>Survival Mode</button>
+      <footer>
+        built by
+        <a href="http://github.com/tekyuma">
+          <AiOutlineGithub />
+        </a>
+        for the odin project
+      </footer>
     </div>
   );
 };
