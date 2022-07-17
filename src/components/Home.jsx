@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { AiOutlineGithub } from 'react-icons/ai';
 
 const Home = () => {
@@ -9,8 +10,12 @@ const Home = () => {
         <h3>Anime Edition</h3>
       </div>
       <div className="buttons">
-        <button className="btn">classic Mode</button>
-        <button className="btn-secondary">Survival Mode</button>
+        <Link to="/classic">
+          <button className="btn">classic Mode</button>
+        </Link>
+        <Link to="/survival">
+          <button className="btn-secondary">Survival Mode</button>
+        </Link>
       </div>
       <footer>
         built by
