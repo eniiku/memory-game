@@ -1,6 +1,17 @@
+/* 
+#INDEX
+--- Global Attributes
+--- Line 33- Home Page Component
+--- Line 125 - Survival Page Component
+ */
+
+/* Global Attributes */
+
 :root {
+  --3d-font: 'Press Start 2P', cursive;
   --btn-alpha: #155799;
   --btn-beta: #f2994a;
+  --btn-bg: #f1f2f2fb;
 }
 
 * {
@@ -18,13 +29,21 @@ body {
 button {
   cursor: pointer;
   padding: 1em 2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9em;
+  font-family: var(--3d-font);
 }
+
+/* Home Component */
 
 .home-page {
   height: 100vh;
-  background: url(./assets/park-troopers-RAtKWVlfdf4-unsplash.jpg);
+  background: lightblue url(./assets/park-troopers-RAtKWVlfdf4-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -43,15 +62,13 @@ button {
 }
 
 .home-page .text h1 {
-  font-family: 'Press Start 2P', cursive;
+  font-family: var(--3d-font);
   font-size: 4.8rem;
   margin-bottom: -0.5rem;
 }
 
 .home-page .buttons button {
   width: 100%;
-  text-transform: uppercase;
-  font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 1.5em;
 }
@@ -63,53 +80,133 @@ button {
 .btn {
   border: 2px solid var(--btn-alpha);
   color: var(--btn-alpha);
-  background-color: #f1f2f2;
+  background-color: var(--btn-bg);
   transition: all 0.25s ease-in-out;
 }
 .btn:hover {
   background-color: var(--btn-alpha);
   border-color: var(--btn-alpha);
-  color: #f1f2f2;
+  color: var(--btn-bg);
 }
 .btn:active {
   background-color: var(--btn-alpha);
   border-color: var(--btn-alpha);
-  color: #f1f2f2;
+  color: var(--btn-bg);
   box-shadow: none;
 }
 .btn:focus,
 .btn:active:focus {
   background-color: var(--btn-alpha);
   border-color: var(--btn-alpha);
-  color: #f1f2f2;
+  color: var(--btn-bg);
   outline: 5px auto var(--btn-alpha);
 }
 
 .btn-secondary {
   border: 2px solid var(--btn-beta);
   color: var(--btn-beta);
-  background-color: #f1f2f2;
+  background-color: var(--btn-bg);
   transition: all 0.25s ease-in-out;
 }
 .btn-secondary:hover {
   background-color: var(--btn-beta);
   border-color: var(--btn-beta);
-  color: #f1f2f2;
+  color: var(--btn-bg);
 }
 .btn-secondary:active {
   background-color: var(--btn-beta);
   border-color: var(--btn-beta);
-  color: #f1f2f2;
+  color: var(--btn-bg);
   box-shadow: none;
 }
 .btn-secondary:focus,
 .btn-secondary:active:focus {
   background-color: var(--btn-beta);
   border-color: var(--btn-beta);
-  color: #f1f2f2;
+  color: var(--btn-bg);
   outline: 5px auto var(--btn-beta);
 }
 
-.home-page footer {
+footer {
   font-size: 0.8em;
+}
+
+/* Survival Page Component */
+
+.survival-page {
+  min-height: 100vh;
+  background: lightblue url(./assets/park-troopers-RAtKWVlfdf4-unsplash.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em 5em;
+}
+
+.survival-page nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.survival-page nav button {
+  border: 2px solid var(--btn-beta);
+  color: var(--btn-beta);
+  background-color: var(--btn-bg);
+  transition: all 0.25s ease-in-out;
+  padding: 1em 3em;
+}
+
+.survival-page nav button:hover {
+  background-color: var(--btn-beta);
+  border-color: var(--btn-beta);
+  color: var(--btn-bg);
+}
+
+.survival-page nav button:active {
+  background-color: var(--btn-beta);
+  border-color: var(--btn-beta);
+  color: var(--btn-bg);
+  box-shadow: none;
+}
+
+.survival-page nav button:focus,
+.survival-page nav button:active:focus {
+  background-color: var(--btn-beta);
+  border-color: var(--btn-beta);
+  color: var(--btn-bg);
+  outline: 5px auto var(--btn-beta);
+}
+
+.survival-page nav p {
+  text-transform: uppercase;
+  font-family: var(--3d-font);
+  font-size: 2em;
+}
+.survival-page main {
+  margin-top: 3em;
+}
+
+.survival-page main .scoreboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3em;
+  font-family: var(--3d-font);
+}
+
+.survival-page main .card {
+  width: 240px;
+  height: 320px;
+  background: var(--btn-beta);
+}
+
+.survival-page main .cards {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 3em;
+  place-items: center;
 }
