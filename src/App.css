@@ -11,7 +11,7 @@
   --3d-font: 'Press Start 2P', cursive;
   --btn-alpha: #155799;
   --btn-beta: #f2994a;
-  --btn-bg: #f1f2f2fb;
+  --btn-secondary: #eeeeee;
 }
 
 * {
@@ -33,6 +33,11 @@ button {
   font-weight: 700;
   font-size: 0.9em;
   font-family: var(--3d-font);
+}
+
+a {
+  text-decoration: none;
+  color: initial;
 }
 
 /* Home Component */
@@ -80,50 +85,50 @@ button {
 .btn {
   border: 2px solid var(--btn-alpha);
   color: var(--btn-alpha);
-  background-color: var(--btn-bg);
+  background-color: var(--btn-secondary);
   transition: all 0.25s ease-in-out;
 }
 .btn:hover {
   background-color: var(--btn-alpha);
   border-color: var(--btn-alpha);
-  color: var(--btn-bg);
+  color: var(--btn-secondary);
 }
 .btn:active {
   background-color: var(--btn-alpha);
   border-color: var(--btn-alpha);
-  color: var(--btn-bg);
+  color: var(--btn-secondary);
   box-shadow: none;
 }
 .btn:focus,
 .btn:active:focus {
   background-color: var(--btn-alpha);
   border-color: var(--btn-alpha);
-  color: var(--btn-bg);
+  color: var(--btn-secondary);
   outline: 5px auto var(--btn-alpha);
 }
 
 .btn-secondary {
   border: 2px solid var(--btn-beta);
   color: var(--btn-beta);
-  background-color: var(--btn-bg);
+  background-color: var(--btn-secondary);
   transition: all 0.25s ease-in-out;
 }
 .btn-secondary:hover {
   background-color: var(--btn-beta);
   border-color: var(--btn-beta);
-  color: var(--btn-bg);
+  color: var(--btn-secondary);
 }
 .btn-secondary:active {
   background-color: var(--btn-beta);
   border-color: var(--btn-beta);
-  color: var(--btn-bg);
+  color: var(--btn-secondary);
   box-shadow: none;
 }
 .btn-secondary:focus,
 .btn-secondary:active:focus {
   background-color: var(--btn-beta);
   border-color: var(--btn-beta);
-  color: var(--btn-bg);
+  color: var(--btn-secondary);
   outline: 5px auto var(--btn-beta);
 }
 
@@ -155,7 +160,7 @@ footer {
 .survival-page nav button {
   border: 2px solid var(--btn-beta);
   color: var(--btn-beta);
-  background-color: var(--btn-bg);
+  background-color: var(--btn-secondary);
   transition: all 0.25s ease-in-out;
   padding: 1em 3em;
 }
@@ -163,13 +168,13 @@ footer {
 .survival-page nav button:hover {
   background-color: var(--btn-beta);
   border-color: var(--btn-beta);
-  color: var(--btn-bg);
+  color: var(--btn-secondary);
 }
 
 .survival-page nav button:active {
   background-color: var(--btn-beta);
   border-color: var(--btn-beta);
-  color: var(--btn-bg);
+  color: var(--btn-secondary);
   box-shadow: none;
 }
 
@@ -177,7 +182,7 @@ footer {
 .survival-page nav button:active:focus {
   background-color: var(--btn-beta);
   border-color: var(--btn-beta);
-  color: var(--btn-bg);
+  color: var(--btn-secondary);
   outline: 5px auto var(--btn-beta);
 }
 

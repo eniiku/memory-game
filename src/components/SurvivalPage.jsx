@@ -1,11 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SurvivalPage = () => {
   return (
     <div className="survival-page">
       <nav>
-        <button>back</button>
-        <p>memorygame</p>
+        <Link to="/">
+          <button>back</button>
+        </Link>
+        <Link to="/">
+          <p>memorygame</p>
+        </Link>
         <div className="nav-icons">
           <div>hi</div>
           <div>hi</div>
