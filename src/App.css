@@ -1,0 +1,115 @@
+:root {
+  --btn-alpha: #155799;
+  --btn-beta: #f2994a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  cursor: pointer;
+  padding: 1em 2em;
+}
+
+.home-page {
+  height: 100vh;
+  background: url(./assets/park-troopers-RAtKWVlfdf4-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-page .text {
+  text-transform: uppercase;
+  margin-top: 7em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.home-page .text h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 4.8rem;
+  margin-bottom: -0.5rem;
+}
+
+.home-page .buttons button {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5em;
+}
+
+.home-page .buttons button:target {
+  box-shadow: rgb(255, 255, 255) 10px 10px 0px -3px, rgb(31, 193, 27) 10px 10px;
+}
+
+.btn {
+  border: 2px solid var(--btn-alpha);
+  color: var(--btn-alpha);
+  background-color: #f1f2f2;
+  transition: all 0.25s ease-in-out;
+}
+.btn:hover {
+  background-color: var(--btn-alpha);
+  border-color: var(--btn-alpha);
+  color: #f1f2f2;
+}
+.btn:active {
+  background-color: var(--btn-alpha);
+  border-color: var(--btn-alpha);
+  color: #f1f2f2;
+  box-shadow: none;
+}
+.btn:focus,
+.btn:active:focus {
+  background-color: var(--btn-alpha);
+  border-color: var(--btn-alpha);
+  color: #f1f2f2;
+  outline: 5px auto var(--btn-alpha);
+}
+
+.btn-secondary {
+  border: 2px solid var(--btn-beta);
+  color: var(--btn-beta);
+  background-color: #f1f2f2;
+  transition: all 0.25s ease-in-out;
+}
+.btn-secondary:hover {
+  background-color: var(--btn-beta);
+  border-color: var(--btn-beta);
+  color: #f1f2f2;
+}
+.btn-secondary:active {
+  background-color: var(--btn-beta);
+  border-color: var(--btn-beta);
+  color: #f1f2f2;
+  box-shadow: none;
+}
+.btn-secondary:focus,
+.btn-secondary:active:focus {
+  background-color: var(--btn-beta);
+  border-color: var(--btn-beta);
+  color: #f1f2f2;
+  outline: 5px auto var(--btn-beta);
+}
+
+.home-page footer {
+  font-size: 0.8em;
+}
