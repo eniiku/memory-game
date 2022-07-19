@@ -1,8 +1,12 @@
 /* 
 #INDEX
 --- Global Attributes
---- Line 33- Home Page Component
---- Line 125 - Survival Page Component
+--- Line 46- Home Page Component
+--- Line 152 - Survival Page Component
+--- Line 153 - Survial Page and Classic Page Components Joint Decelartions
+--- Line 169 - Survial Page and Classic Page Components Joint Decelartions 
+--- Line 207 - Survial Page and Classic Page Components Joint Decelartions 
+--- Line 253 - Classic Page Component
  */
 
 /* Global Attributes */
@@ -131,13 +135,26 @@ a {
   outline: 5px auto var(--btn-beta);
 }
 
-footer {
+.home-page footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 0.8em;
 }
 
-/* Survival Page Component */
+.footer-icon {
+  margin: 0 0.2em;
+  padding: 0;
+  height: 1em;
+  width: 1em;
+  transform: translateY(0.1em);
+}
 
-.survival-page {
+/* Survival Page Component */
+/* Survial Page and Classic Page Components Joint Decelartions */
+
+.survival-page,
+.classic-page {
   min-height: 100vh;
   background: lightblue url(./assets/park-troopers-RAtKWVlfdf4-unsplash.jpg);
   background-repeat: repeat;
@@ -150,7 +167,10 @@ footer {
   padding: 2em 5em;
 }
 
-.survival-page nav {
+/* Survial Page and Classic Page Components Joint Decelartions */
+
+.survival-page nav,
+.classic-page nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -185,7 +205,10 @@ footer {
   outline: 5px auto var(--btn-beta);
 }
 
-.survival-page nav p {
+/* Survial Page and Classic Page Components Joint Decelartions */
+
+.survival-page nav p,
+.classic-page nav p {
   text-transform: uppercase;
   font-family: var(--3d-font);
   font-size: 2em;
@@ -224,4 +247,35 @@ footer {
   grid-template-columns: repeat(4, auto);
   gap: 3em;
   place-items: center;
+}
+
+/* Classic Page Component */
+
+.classic-page nav button {
+  border: 2px solid var(--btn-alpha);
+  color: var(--btn-alpha);
+  background-color: var(--btn-secondary);
+  transition: all 0.25s ease-in-out;
+  padding: 1em 3em;
+}
+
+.classic-page nav button:hover {
+  background-color: var(--btn-alpha);
+  border-color: var(--btn-alpha);
+  color: var(--btn-secondary);
+}
+
+.classic-page nav button:active {
+  background-color: var(--btn-alpha);
+  border-color: var(--btn-alpha);
+  color: var(--btn-secondary);
+  box-shadow: none;
+}
+
+.classic-page nav button:focus,
+.classic-page nav button:active:focus {
+  background-color: var(--btn-alpha);
+  border-color: var(--btn-alpha);
+  color: var(--btn-secondary);
+  outline: 5px auto var(--btn-alpha);
 }
