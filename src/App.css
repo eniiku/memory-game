@@ -63,7 +63,6 @@ a {
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  font-weight: 700;
 }
 
 .home-page .text h1 {
@@ -191,6 +190,17 @@ footer {
   font-family: var(--3d-font);
   font-size: 2em;
 }
+
+.linkedin-nav-icons,
+.github-nav-icons {
+  height: 1.6em;
+  width: 1.6em;
+}
+
+.github-nav-icons {
+  margin-left: 1.3em;
+}
+
 .survival-page main {
   margin-top: 3em;
 }
