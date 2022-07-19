@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { IconContext } from 'react-icons';
 import { AiOutlineGithub } from 'react-icons/ai';
 
 const Home = () => {
@@ -20,7 +21,9 @@ const Home = () => {
       <footer>
         built by
         <a href="http://github.com/tekyuma">
-          <AiOutlineGithub />
+          <IconContext.Provider value={{ className: 'footer-icon' }}>
+            <AiOutlineGithub />
+          </IconContext.Provider>
         </a>
         for the odin project
       </footer>
