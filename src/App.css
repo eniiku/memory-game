@@ -1,11 +1,11 @@
 /* 
 #INDEX
---- Global Attributes
+--- Global Declerations
 --- Line 46- Home Page Component
 --- Line 152 - Survival Page Component
---- Line 153 - Survial Page and Classic Page Components Joint Decelartions
---- Line 169 - Survial Page and Classic Page Components Joint Decelartions 
---- Line 207 - Survial Page and Classic Page Components Joint Decelartions 
+--- Line 153 - Survial Page and Classic Page Components Joint Declerations 
+--- Line 169 - Survial Page and Classic Page Components Joint Declerations (nav) 
+--- Line 207 - Survial Page and Classic Page Components Joint Declerations (nav) 
 --- Line 253 - Classic Page Component
  */
 
@@ -16,6 +16,7 @@
   --btn-alpha: #155799;
   --btn-beta: #f2994a;
   --btn-secondary: #eeeeee;
+  --classic-btn-1: red;
 }
 
 * {
@@ -31,6 +32,7 @@ body {
 }
 
 button {
+  width: 100%;
   cursor: pointer;
   padding: 1em 2em;
   text-transform: uppercase;
@@ -151,7 +153,7 @@ a {
 }
 
 /* Survival Page Component */
-/* Survial Page and Classic Page Components Joint Decelartions */
+/* Survial Page and Classic Page Components Joint Declerations */
 
 .survival-page,
 .classic-page {
@@ -167,13 +169,14 @@ a {
   padding: 2em 5em;
 }
 
-/* Survial Page and Classic Page Components Joint Decelartions */
+/* Survial Page and Classic Page Components Joint Declerations (nav) */
 
 .survival-page nav,
 .classic-page nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 3em;
 }
 
 .survival-page nav button {
@@ -205,7 +208,7 @@ a {
   outline: 5px auto var(--btn-beta);
 }
 
-/* Survial Page and Classic Page Components Joint Decelartions */
+/* Survial Page and Classic Page Components Joint Declerations (nav) */
 
 .survival-page nav p,
 .classic-page nav p {
@@ -222,10 +225,6 @@ a {
 
 .github-nav-icons {
   margin-left: 1.3em;
-}
-
-.survival-page main {
-  margin-top: 3em;
 }
 
 .survival-page main .scoreboard {
@@ -278,4 +277,81 @@ a {
   border-color: var(--btn-alpha);
   color: var(--btn-secondary);
   outline: 5px auto var(--btn-alpha);
+}
+
+.welcome-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 65ch;
+  background: burlywood;
+  font-family: var(--3d-font);
+  font-size: 0.8em;
+  padding: 3em;
+  line-height: 1.9em;
+}
+.welcome-page > p {
+  margin-bottom: 2em;
+}
+
+.welcome-page .instructions {
+  margin-bottom: 2em;
+}
+.welcome-page .instructions h3 {
+  text-align: center;
+  padding: 0.3em;
+  font-size: 1.5em;
+  margin-bottom: 1.4em;
+  border-top: 0.4em var(--btn-secondary) solid;
+  border-bottom: 0.4em var(--btn-secondary) solid;
+}
+
+.welcome-page .instructions ul {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  list-style-type: none;
+}
+
+.welcome-page .instructions li::before {
+  content: '\2022';
+  color: var(--btn-secondary);
+  font-size: 2.3em;
+  margin-left: 0.6em;
+}
+
+.welcome-page .instructions li {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 0.5em;
+}
+
+.welcome-page button {
+  border: 2px solid var(--classic-btn-1);
+  color: var(--classic-btn-1);
+  background-color: var(--btn-secondary);
+  transition: all 0.25s ease-in-out;
+  padding: 1em 3em;
+}
+
+.welcome-page button:hover {
+  background-color: var(--classic-btn-1);
+  border-color: var(--classic-btn-1);
+  color: var(--btn-secondary);
+}
+
+.welcome-page button:active {
+  background-color: var(--classic-btn-1);
+  border-color: var(--classic-btn-1);
+  color: var(--btn-secondary);
+  box-shadow: none;
+}
+
+.welcome-page button:focus,
+.welcome-page button:active:focus {
+  background-color: var(--classic-btn-1);
+  border-color: var(--classic-btn-1);
+  color: var(--btn-secondary);
+  outline: 5px auto var(--classic-btn-1);
 }

@@ -11,7 +11,7 @@ const Home = () => {
         <h3>Anime Edition</h3>
       </div>
       <div className="buttons">
-        <Link to="/classic">
+        <Link to="/classic/welcome">
           <button className="btn">classic Mode</button>
         </Link>
         <Link to="/survival">
