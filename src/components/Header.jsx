@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { IconContext } from 'react-icons';
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
 
@@ -24,7 +24,6 @@ const Header = () => {
           </IconContext.Provider>
         </a>
       </div>
-      <Outlet />
     </nav>
   );
 };

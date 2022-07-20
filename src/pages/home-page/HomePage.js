@@ -11,10 +11,10 @@ const Home = () => {
         <h3>Anime Edition</h3>
       </div>
       <div className="buttons">
-        <Link to="/classic/welcome">
+        <Link to="classic">
           <button className="btn">classic Mode</button>
         </Link>
-        <Link to="/survival">
+        <Link to="survival">
           <button className="btn-secondary">Survival Mode</button>
         </Link>
       </div>

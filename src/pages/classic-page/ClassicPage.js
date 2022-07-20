@@ -1,12 +1,12 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import Header from '../../components/Header';
-import Welcome from '../../components/Welcome';
 
 const ClassicPage = () => {
   return (
     <div className="classic-page">
       <Header />
-      <Welcome />
+      <Outlet />
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Welcome = () => {
   return (
@@ -22,7 +23,9 @@ const Welcome = () => {
         </ul>
         <p>Got that?</p>
       </div>
-      <button>continue</button>
+      <Link to="level-1">
+        <button>continue</button>
+      </Link>
     </div>
   );
 };
