@@ -8,11 +8,12 @@ Do you think you have what it takes to beat the game?</center>
 
 ## Classic Mode
 
-Beat the game by playing through a series a levels. Each level with its own style and level of difficulty.
+![Preview of Memory Game's Classic Page.](./src/assets/classic-page.png 'Memory Games Classic Page')
+Beat the game by playing through 10 levels each with its own style and difficulty. Do you think you have what it takes to beat all 10 levels?
 
 ## Survival Mode
 
-![Preview of Memory Game's Home Page.](./src/assets/survival-page.png 'Memory Games Survival Page')
+![Preview of Memory Game's Survival Page.](./src/assets/survival-page.png 'Memory Games Survival Page')
 
 No Levels! No Lifes! No Timeout! <br> Try to surpass your limits as you compete in this game mode
 
