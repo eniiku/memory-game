@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './components/HomePage';
-import ClassicPage from './components/classic-page/ClassicPage';
-import SurvivalPage from './components/SurvivalPage';
+import HomePage from './pages/home-page/HomePage';
+import ClassicPage from './pages/classic-page/ClassicPage';
+import SurvivalPage from './pages/survival-page/SurvivalPage';
 import './App.css';
 
 const App = () => {

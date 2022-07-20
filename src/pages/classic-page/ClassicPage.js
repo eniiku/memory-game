@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './Header';
-import Welcome from './Welcome';
+import Header from '../../components/Header';
+import Welcome from '../../components/Welcome';
 
 const ClassicPage = () => {
   return (
